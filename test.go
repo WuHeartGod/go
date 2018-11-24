@@ -5,9 +5,16 @@ package  main
 import "fmt"
 
 // 程序入口 main函数
+func gofun(){
+	fmt.Println("go fun")
+}
 
 func main(){
 
     fmt.Println("Hello world!");
-
+	fmt.Println("first go");
+	
+	for{
+		go gofun()
+	}
 }
