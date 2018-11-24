@@ -2,7 +2,10 @@ package  main
 
 // 导入标准库或第三方库
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // 程序入口 main函数
 func gofun(){
@@ -15,6 +18,7 @@ func main(){
 	fmt.Println("first go");
 	
 	for{
-		go gofun()
+	//	go gofun()
+		time.Sleep(time.Duration(2)*time.Second)
 	}
 }
